@@ -19,6 +19,5 @@ def solve_magic_square(size = 3):
 	    magic.addConstraint(ExactSumConstraint(board_line_sum), col)#Similarly add each column as constraint.
 	magic.addConstraint(AllDifferentConstraint(), board)#Every block has a different number.
 	return magic.getSolution()Retutn the solution.
-
 if __name__ == '__main__':
     print solve_magic_square()
