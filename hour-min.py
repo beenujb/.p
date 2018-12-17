@@ -1,9 +1,9 @@
 #set the date and time format
-date_format = "%m-%d-%Y %H:%M:%S"
+date = "%m-%d-%Y %H:%M:%S"
  
 #convert string to actual date and time
-time1  = datetime.strptime('8-01-2008 00:00:00', date_format)
-time2  = datetime.strptime('8-02-2008 01:30:00', date_format)
+time1  = datetime.strptime('8-01-2008 00:00:00', date)
+time2  = datetime.strptime('8-02-2008 01:30:00', date)
  
 #find the difference between two dates
 diff = time2 - time1
@@ -28,16 +28,13 @@ print (str(overall_hours) + ' hours');
  
 print ('\nTime difference between two times (date is not considered)')
  
-#like days there is no hours in python
-#but it has seconds, finding hours from seconds is easy
-#just divide it by 3600
+
  
 hours = (diff.seconds) / 3600  
 print (str(hours) + ' Hours')
  
  
-#same for minutes just divide the seconds by 60
- 
+
 minutes = (diff.seconds) / 60
 print (str(minutes) + ' Minutes')
  
