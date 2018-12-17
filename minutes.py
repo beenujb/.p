@@ -1,8 +1,8 @@
 def time():
     sec = int( input ('Enter the number of seconds:'.strip())
     if sec <= 60:
-        minutes = sec // 60
-        print('The number of minutes is {0:.2f}'.format(minutes)) 
+        min = sec // 60
+        print('The number of minutes is {0:.2f}'.format(min)) 
     if sec (<= 3600):
         hours = sec // 3600
         print('The number of minutes is {0:.2f}'.format(hours))
